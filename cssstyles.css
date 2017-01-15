@@ -1,0 +1,49 @@
+/* HW1 Css File */
+
+
+/*styling for the whole page goes here*/
+body {
+    background-color:  #eee;
+}
+
+
+/*styling for the overall table*/
+table {
+    background-color: #2C1800;
+    color: #C8AD7F;
+    border: double;
+}
+
+.altrow {
+    background-color: #C3B091;
+    color: black;
+    border-style: ridge;
+}
+
+.border {
+    border-style: ridge;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+/*styling for the title of the table*/
+th {
+    font-weight: bold;
+    text-align: left;
+    border-style: ridge;
+}
+
+/*styling for the coffee types*/
+.label {
+    font-weight: bold;
+    border-style: ridge;
+}
+
+/*styling for the bottom copyright information*/
+footer {
+    font-style: italic;
+    text-align: center;
+    font-size: small;
+}
