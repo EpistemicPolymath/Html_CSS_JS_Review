@@ -37,12 +37,34 @@
                 <input type="checkbox" name="topping[mushrooms]"> Mushrooms
             </p>
 
+            <h3>How do you want to get your pizza?</h3>
+
+            <p>
+                <input type="radio" name="deliveryPreference" value="delivery"> Delivery<br>
+                <input type="radio" name="deliveryPreference" value="pickup"> Pickup
+            </p>
+
+            <h3>Tip?</h3>
+            <select name="tip">
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+            </select>
+
+            <hr>
+
+            <h3>Address</h3>
+            <textarea name="address" placeholder="Your address..." rows="3" cols="40"></textarea>
+
+            <br><br>
             <input type="submit">
 
         </form>
 
         <!-- Table info on is page 33 of book -->
 
+        <br><br>
 
         <div id="footer">
             <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
