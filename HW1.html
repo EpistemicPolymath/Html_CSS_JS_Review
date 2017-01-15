@@ -18,7 +18,7 @@
 
     <div id="main">
 
-        <form>
+        <form action="" method="get">
 
             Name: <input name="CustomerName"/> <br/>
             Email: <input name="CustomerEmail"/>
@@ -26,7 +26,18 @@
             <br/>
 
             <h3>Toppings:</h3>
-            
+
+            <p>
+                <input type="checkbox" name="topping[cheese]"> Extra Cheese
+                <input type="checkbox" name="topping[pepperoni]"> Pepperoni
+                <input type="checkbox" name="topping[olives]"> Olives
+                <input type="checkbox" name="topping[pepper]"> Pepper
+                <input type="checkbox" name="topping[bacon]"> Bacon
+                <input type="checkbox" name="topping[tomatoes]"> Tomatoes
+                <input type="checkbox" name="topping[mushrooms]"> Mushrooms
+            </p>
+
+            <input type="submit">
 
         </form>
 
