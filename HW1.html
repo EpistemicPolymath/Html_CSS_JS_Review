@@ -36,12 +36,34 @@
                 Tomatoes:<input type="checkbox" name="topping[tomatoes]"/>
                 Mushrooms:<input type="checkbox" name="toppings[mushrooms]"/>
 
-            </p>  <br/>
+            </p>
 
             <p>
 
-            <h3>How do you want to get your pizza!</h3> Delivery <input type="radio" name="orderType"/>
-            Pickup <input type="radio" name="orderType"/>
+            <h3>How do you want to get your pizza!</h3>
+            Delivery <input type="radio" name="deliveryPreference"/>
+            Pickup <input type="radio" name="deliveryPreference"/>
+
+
+            <h3>Tip?</h3>
+            <select id="tip" name="tip">
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+                <option value="25">25%</option>
+            </select>
+
+            <hr>
+
+            </p>
+
+            <p>
+
+            <h3> Address:</h3>
+            <textarea id="address" name="address" rows="4" cols="40"> </textarea>
+            <br>
+            <input type="submit" value="Submit"/>
+            <button type="button" onclick="reset()"> Reset</button>
+            <button type="button"> Show Summary</button>
 
             </p>
         </form>
@@ -50,13 +72,14 @@
 
         <!-- Table info on is page 33 of book -->
 
+        <!--
+        Validation
+               <div id="footer">
+                   <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
+                   <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
 
-        <div id="footer">
-            <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
-
-        </div>
-
+               </div>
+       -->
     </div>
 </div>
 </body>
