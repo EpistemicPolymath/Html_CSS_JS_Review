@@ -6,76 +6,72 @@
 
     <meta name="description" content="HW1"/>
     <meta charset="utf-8"/>
+
     <link rel="stylesheet" type="text/css" href="cssstyles.css">
     <script src="interact.js" type="text/javascript"></script>
 
-
 </head>
 
-
 <body>
-<div id="wrapper">
+    <div id="wrapper">
+        <div id="main">
 
-    <div id="main">
+            <form action="" method="get">
 
-        <form action="" method="get">
+                <h3>Your Info:</h3>
+                <p>
+                    Name: <input name="CustomerName"/> <br/>
+                    Email: <input name="CustomerEmail"/>
+                </p>
 
-            Name: <input name="CustomerName"/> <br/>
-            Email: <input name="CustomerEmail"/>
+                <h3>Toppings:</h3>
+                <p>
+                    <input class="topping" type="checkbox" name="topping[cheese]"> Extra Cheese
+                    <input class="topping" type="checkbox" name="topping[pepperoni]"> Pepperoni
+                    <input class="topping" type="checkbox" name="topping[olives]"> Olives
+                    <input class="topping" type="checkbox" name="topping[pepper]"> Pepper
+                    <input class="topping" type="checkbox" name="topping[bacon]"> Bacon
+                    <input class="topping" type="checkbox" name="topping[tomatoes]"> Tomatoes
+                    <input class="topping" type="checkbox" name="topping[mushrooms]"> Mushrooms
+                </p>
 
-            <br/>
+                <h3>How do you want to get your pizza?</h3>
+                <p>
+                    <input class="deliveryPreference" type="radio" name="deliveryPreference" value="delivery"> Delivery<br>
+                    <input class="deliveryPreference" type="radio" name="deliveryPreference" value="pickup"> Pickup
+                </p>
 
-            <h3>Toppings:</h3>
+                <h3>Tip?</h3>
+                <select id="tip" name="tip">
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                </select>
 
-            <p>
-                <input class="topping" type="checkbox" name="topping[cheese]"> Extra Cheese
-                <input class="topping" type="checkbox" name="topping[pepperoni]"> Pepperoni
-                <input class="topping" type="checkbox" name="topping[olives]"> Olives
-                <input class="topping" type="checkbox" name="topping[pepper]"> Pepper
-                <input class="topping" type="checkbox" name="topping[bacon]"> Bacon
-                <input class="topping" type="checkbox" name="topping[tomatoes]"> Tomatoes
-                <input class="topping" type="checkbox" name="topping[mushrooms]"> Mushrooms
-            </p>
+                <hr>
 
-            <h3>How do you want to get your pizza?</h3>
+                <h3>Address</h3>
+                <textarea id="address" name="address" placeholder="Your address..." rows="3" cols="40"></textarea>
 
-            <p>
-                <input class="deliveryPreference" type="radio" name="deliveryPreference" value="delivery"> Delivery<br>
-                <input class="deliveryPreference" type="radio" name="deliveryPreference" value="pickup"> Pickup
-            </p>
+                <br><br>
+                <input type="submit" value="Submit">
+                <button type="button">Reset</button>
+                <button type="button">Show Summary</button>
 
-            <h3>Tip?</h3>
-            <select id="tip" name="tip">
-                <option value="5">5%</option>
-                <option value="10">10%</option>
-                <option value="15">15%</option>
-                <option value="20">20%</option>
-            </select>
+            </form>
 
-            <hr>
-
-            <h3>Address</h3>
-            <textarea id="address" name="address" placeholder="Your address..." rows="3" cols="40"></textarea>
+            <!-- Table info on is page 33 of book -->
 
             <br><br>
-            <input type="submit" value="Submit">
-            <button type="button">Reset</button>
-            <button type="button">Show Summary</button>
 
-        </form>
-
-        <!-- Table info on is page 33 of book -->
-
-        <br><br>
-
-        <div id="footer">
-            <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+            <div id="footer">
+                <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+            </div>
 
         </div>
-
     </div>
-</div>
 </body>
 
 </html>
