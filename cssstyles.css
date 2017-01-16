@@ -1,4 +1,4 @@
-/* HW1 Css File */
+/* HW1 CSS File */
 
 
 /*styling for the whole page goes here*/
@@ -6,12 +6,27 @@ body {
     background-color:  #eee;
     font-family: "Arial";
     font-size: 80%;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
+/* Input fields at 600px */
+.input-fields {
+   width: 600px;
+}
+
+/* Float to the top right */
+.help-text {
+    position: fixed;
+    top:0;
+    right:0;
+}
 
 /*styling for the overall table*/
 table {
+    visibility: hidden;
     background-color: #2C1800;
     color: #C8AD7F;
     border: double;
