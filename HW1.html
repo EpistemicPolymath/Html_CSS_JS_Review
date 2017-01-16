@@ -28,24 +28,24 @@
             <h3>Toppings:</h3>
 
             <p>
-                <input type="checkbox" name="topping[cheese]"> Extra Cheese
-                <input type="checkbox" name="topping[pepperoni]"> Pepperoni
-                <input type="checkbox" name="topping[olives]"> Olives
-                <input type="checkbox" name="topping[pepper]"> Pepper
-                <input type="checkbox" name="topping[bacon]"> Bacon
-                <input type="checkbox" name="topping[tomatoes]"> Tomatoes
-                <input type="checkbox" name="topping[mushrooms]"> Mushrooms
+                <input class="topping" type="checkbox" name="topping[cheese]"> Extra Cheese
+                <input class="topping" type="checkbox" name="topping[pepperoni]"> Pepperoni
+                <input class="topping" type="checkbox" name="topping[olives]"> Olives
+                <input class="topping" type="checkbox" name="topping[pepper]"> Pepper
+                <input class="topping" type="checkbox" name="topping[bacon]"> Bacon
+                <input class="topping" type="checkbox" name="topping[tomatoes]"> Tomatoes
+                <input class="topping" type="checkbox" name="topping[mushrooms]"> Mushrooms
             </p>
 
             <h3>How do you want to get your pizza?</h3>
 
             <p>
-                <input type="radio" name="deliveryPreference" value="delivery"> Delivery<br>
-                <input type="radio" name="deliveryPreference" value="pickup"> Pickup
+                <input class="deliveryPreference" type="radio" name="deliveryPreference" value="delivery"> Delivery<br>
+                <input class="deliveryPreference" type="radio" name="deliveryPreference" value="pickup"> Pickup
             </p>
 
             <h3>Tip?</h3>
-            <select name="tip">
+            <select id="tip" name="tip">
                 <option value="5">5%</option>
                 <option value="10">10%</option>
                 <option value="15">15%</option>
@@ -55,10 +55,12 @@
             <hr>
 
             <h3>Address</h3>
-            <textarea name="address" placeholder="Your address..." rows="3" cols="40"></textarea>
+            <textarea id="address" name="address" placeholder="Your address..." rows="3" cols="40"></textarea>
 
             <br><br>
-            <input type="submit">
+            <input type="submit" value="Submit">
+            <button type="button">Reset</button>
+            <button type="button">Show Summary</button>
 
         </form>
 
