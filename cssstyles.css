@@ -4,6 +4,9 @@
 /*styling for the whole page goes here*/
 body {
     background-color:  #eee;
+    font-family: "Arial";
+    font-size: 80%;
+    margin: 20px;
 }
 
 
