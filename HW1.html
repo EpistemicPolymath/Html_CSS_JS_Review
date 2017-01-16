@@ -31,7 +31,6 @@
         <form>
 
 
-
             Name: <input class="input-fields" id="nameInput" name="CustomerName"/> <br/>
             Email: <input class="input-fields" id="emailInput" name="CustomerEmail"/>
 
@@ -77,6 +76,60 @@
             <button type="button" onclick="reset()"> Reset</button> <!-- For Javascript -->
             <button type="button"> Show Summary</button>
 
+            <br>
+
+            <!-- Insert Pizza Order Summary Table here -->
+            <div class="pizzaTable" id="pizzaTable">
+                <h2>Pizza Order Summary</h2>
+                <table id="pizzaOrderSummary">
+                    <tr>
+                        <td class="table-headers">Name:</td>
+                        <td class="oddrow"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-headers">Email:</td>
+                        <td class="evenrow"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-headers">Address:</td>
+                        <td class="oddrow"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-headers">Toppings</td>
+                        <td class="evenrow"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-headers">Topping 1</td>
+                        <td class="oddrow"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-headers">Topping 2</td>
+                        <td class="evenrow"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-headers">Delivery?</td>
+                        <td class="oddrow"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-headers">Tip Amount</td>
+                        <td class="evenrow"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-headers">Total</td>
+                        <td class="oddrow"></td>
+                    </tr>
+
+                </table>
+
+            </div>
 
             </p>
 
@@ -84,7 +137,6 @@
 
         </form>
 
-        <!-- Table info on is page 33 of book -->
 
         <!--
         Validation

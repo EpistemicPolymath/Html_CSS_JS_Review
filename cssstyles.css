@@ -1,9 +1,8 @@
 /* HW1 CSS File */
 
-
 /*styling for the whole page goes here*/
 body {
-    background-color:  #eee;
+    background-color: #eeeeee;
     font-family: "Arial";
     font-size: 80%;
     margin-top: 20px;
@@ -14,54 +13,44 @@ body {
 
 /* Input fields at 600px */
 .input-fields {
-   width: 600px;
+    width: 600px;
 }
 
 /* Float to the top right */
 .help-text {
     position: fixed;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
 }
 
 /*styling for the overall table*/
-table {
+
+.pizzaTable {
+
     visibility: hidden;
-    background-color: #2C1800;
-    color: #C8AD7F;
+
+}
+
+table {
     border: double;
 }
 
-.altrow {
-    background-color: #C3B091;
-    color: black;
+.table-headers{
+
+    background-color: black;
+    color: white;
+    width: 15%;
+}
+
+.oddrow{
+    background-color: #ffffff;
     border-style: ridge;
+    width: 70%;
 }
 
-.border {
+.evenrow {
+    background-color: #eeeeee;
     border-style: ridge;
+    width: 70%;
 }
 
-ul {
-    list-style-type: circle;
-}
-
-/*styling for the title of the table*/
-th {
-    font-weight: bold;
-    text-align: left;
-    border-style: ridge;
-}
-
-/*styling for the coffee types*/
-.label {
-    font-weight: bold;
-    border-style: ridge;
-}
-
-/*styling for the bottom copyright information*/
-footer {
-    font-style: italic;
-    text-align: center;
-    font-size: small;
-}
