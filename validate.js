@@ -1,4 +1,3 @@
-
 window.onload = pageload();
 
 
@@ -13,18 +12,17 @@ function validateForm() {
 
 //Name Validation
 
-    var name = document.forms["theForm"]["CustomerName"].value;
-    if (name == null || name == " ") {
+    var name = document.forms["theForm"]["customername"].value;
+    if (name == " ") {
 
         console.log('name validation failed');
         alert("The Name value needs to be filled");
         return false;
-
     }
     //Email Validation
 
-    var email = document.forms["theForm"]["CustomerEmail"].value;
-    if (email == null || email == " ") {
+    var email = document.forms["theForm"]["customeremail"].value;
+    if (email == " ") {
         console.log('email validation failed');
         alert("The Email value needs to be filled");
         return false;
@@ -32,25 +30,26 @@ function validateForm() {
     {
         console.log('email validation failed');
         alert("Email needs to contain an '@' symbol.");
-
         return false;
     }
 
     //Radio or Delivery Type Validation
-
-    for (var i=0; i < document.theForm.deliveryPreference.length; i++) {
+    var success = false;
+    for (var i = 0; i < document.theForm.deliveryPreference.length; i++) {
         //Uses the DOM and name attributes to make radio button array.length
 
-
-        if (document.theForm.deliveryPreference[i].checked != true){
-            console.log('delivery option validation failed');
-            alert("Please select your preferred delivery option!");
-            return false;
-
+        if (document.theForm.deliveryPreference[i].checked = true) {
+            success = true;
         }
     }
 
-        //Address Validation
+    if(success = false) {
+        console.log('delivery option validation failed');
+        alert("Please select your preferred delivery option!");
+        return false;
+    }
+
+    //Address Validation
 
     var address = document.forms["theForm"]["address"].value;
     if (address == null || address == " ") {
@@ -62,7 +61,6 @@ function validateForm() {
     }
 
     return true;
-
 
 
 }
