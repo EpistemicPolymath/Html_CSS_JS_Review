@@ -1,14 +1,17 @@
 
-window.onload = pageload;
+window.onload = pageload();
 
 function pageload() { //On the page's load the submit button will be hooked to the function validateForm
 
-    var submitCompute = document.getElementById("submitButton");
-    submitCompute.onlick = validateForm;
+    document.getElementById("submitButton").onclick = function() {
+        validateForm(event)
+    };
 
 }
 
-function validateForm() {
+function validateForm(event) {
+
+    event.preventDefault();
 
     var valid = 0;
 
