@@ -15,12 +15,11 @@ function validateForm() {
 
     var name = document.forms["theForm"]["CustomerName"].value;
     if (name == null || name == " ") {
+
         console.log('name validation failed');
         alert("The Name value needs to be filled");
-
         return false;
 
-        //return false;
     }
     //Email Validation
 
@@ -28,14 +27,14 @@ function validateForm() {
     if (email == null || email == " ") {
         console.log('email validation failed');
         alert("The Email value needs to be filled");
-        //return false
+        return false;
     } else if (email.indexOf('@') === -1) //This checks to see if the email has an @ symbol. "-1" is an error code
     {
         console.log('email validation failed');
         alert("Email needs to contain an '@' symbol.");
 
         return false;
-        //return false;
+        
 
     }
 
