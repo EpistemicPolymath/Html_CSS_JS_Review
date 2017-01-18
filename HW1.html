@@ -29,21 +29,21 @@
     <form action="#" name="theForm">
 
 
-        Name: <input class="input-fields" id="nameInput" name="customerName"/> <br/>
-        Email: <input class="input-fields" id="emailInput" name="customerEmail"/>
+        Name: <input type="text" class="input-fields" id="nameInput" name="customerName"/> <br/>
+        Email: <input type="text" class="input-fields" id="emailInput" name="customerEmail"/>
 
         <br/>
 
         <h3>Toppings:</h3>
 
         <p>
-            Extra Cheese:<input type="checkbox" name="toppings[extra cheese]"/>
-            Pepperoni:<input type="checkbox" name="toppings[pepperoni]"/>
-            Olives:<input type="checkbox" name="toppings[olives]"/>
-            Pepper:<input type="checkbox" name="toppings[pepper]"/>
-            Bacon:<input type="checkbox" name="toppings[Bacon]"/>
-            Tomatoes:<input type="checkbox" name="topping[tomatoes]"/>
-            Mushrooms:<input type="checkbox" name="toppings[mushrooms]"/>
+            Extra Cheese:<input type="checkbox" name="toppings[extra cheese]" class="toppings"/>
+            Pepperoni:<input type="checkbox" name="toppings[pepperoni]" class="toppings"/>
+            Olives:<input type="checkbox" name="toppings[olives]" class="toppings"/>
+            Pepper:<input type="checkbox" name="toppings[pepper]" class="toppings"/>
+            Bacon:<input type="checkbox" name="toppings[Bacon]" class="toppings">
+            Tomatoes:<input type="checkbox" name="topping[tomatoes]" class="toppings"/>
+            Mushrooms:<input type="checkbox" name="toppings[mushrooms]" class="toppings"/>
 
         </p>
 
@@ -71,7 +71,7 @@
         <textarea id="address" name="address" rows="4" cols="40"> </textarea>
         <br>
         <input id="submitButton" type="submit" value="Submit"/>
-        <button type="button" onclick="reset()"> Reset</button> <!-- For Javascript -->
+        <button type="button" onclick="reset()"> Reset</button>
         <button type="button"> Show Summary</button>
 
         <br>

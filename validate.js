@@ -13,7 +13,7 @@ function validateForm() {
 //Name Validation
 
     var name = document.forms["theForm"]["customerName"].value;
-    if (name == null || name == " ") {
+    if ((name == " ") || (name == null) || (name == "")) {
 
         console.log('name validation failed');
         alert("The Name value needs to be filled");
@@ -22,7 +22,7 @@ function validateForm() {
     //Email Validation
 
     var email = document.forms["theForm"]["customerEmail"].value;
-    if (email == null || email == " ") {
+    if ((email == " ") || (email == null) ||( email == "")) {
         console.log('email validation failed');
         alert("The Email value needs to be filled");
         return false;
@@ -33,6 +33,17 @@ function validateForm() {
         return false;
     }
 
+
+   /* If I wanted to check for at least one topping CheckBoxes
+
+    if (document.querySelector('.toppings:checked')) {
+        // somethings checked
+    }else{
+
+        alert("Don't you want a topping?");
+        return false;
+    }
+*/
     //Radio or Delivery Type Validation
     var success = false;
     for (var i = 0; i < document.theForm.deliveryPreference.length; i++) {
