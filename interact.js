@@ -1,7 +1,7 @@
 // When the document loads this function plays out.
 $(document).ready(function () {
 
-    $('help-text-field').focus( function() {
+    $('help-text-field').focus(function () {
 
 
             if (id == "nameInput") {
@@ -25,19 +25,18 @@ $(document).ready(function () {
             }
 
 
-            if (id == "resetButton"){
+            if (id == "resetButton") {
 
                 document.getElementById("help-box").innerHTML = "Submit Order";
 
             }
 
-            if ((id == " ") || (id == "") || (id == null)){
+            if ((id == " ") || (id == "") || (id == null)) {
 
                 document.getElementById("help-box").innerHTML = "This is to provide context-sensitive help. " +
                     "Click on any input field or use the TAB key to get more information about the input field."
 
-            }
 
-        }
-    )
-}
+            }
+        });
+});
