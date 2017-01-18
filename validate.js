@@ -1,6 +1,4 @@
-/**
- * Created by EpistemicPolymath on 1/17/2017.
- */
+
 window.onload = pageload;
 
 function pageload() { //On the page's load the submit button will be hooked to the function validateForm
