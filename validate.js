@@ -12,8 +12,8 @@ function validateForm() {
 
 //Name Validation
 
-    var name = document.forms["theForm"]["customername"].value;
-    if (name == " ") {
+    var name = document.forms["theForm"]["customerName"].value;
+    if (name == null || name == " ") {
 
         console.log('name validation failed');
         alert("The Name value needs to be filled");
@@ -21,8 +21,8 @@ function validateForm() {
     }
     //Email Validation
 
-    var email = document.forms["theForm"]["customeremail"].value;
-    if (email == " ") {
+    var email = document.forms["theForm"]["customerEmail"].value;
+    if (email == null || email == " ") {
         console.log('email validation failed');
         alert("The Email value needs to be filled");
         return false;
@@ -38,12 +38,13 @@ function validateForm() {
     for (var i = 0; i < document.theForm.deliveryPreference.length; i++) {
         //Uses the DOM and name attributes to make radio button array.length
 
-        if (document.theForm.deliveryPreference[i].checked = true) {
+        if (document.theForm.deliveryPreference[i].checked == true) {
             success = true;
+            break;
         }
     }
 
-    if(success = false) {
+    if(success == false) {
         console.log('delivery option validation failed');
         alert("Please select your preferred delivery option!");
         return false;
@@ -57,7 +58,6 @@ function validateForm() {
         console.log('address validation failed');
         alert("The Address needs to be filled");
         return false;
-
     }
 
     return true;
