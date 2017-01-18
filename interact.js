@@ -1,2 +1,2 @@
-window.onload = pageload;
+// window.onload = pageload;
 

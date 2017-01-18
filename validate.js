@@ -1,17 +1,15 @@
 
 window.onload = pageload();
 
+
 function pageload() { //On the page's load the submit button will be hooked to the function validateForm
 
-    document.getElementById("submitButton").onclick = function() {
-        validateForm(event)
-    };
-
+    document.getElementById("submitButton").onclick = validateForm;
 }
 
-function validateForm(event) {
 
-    event.preventDefault();
+function validateForm() {
+
 
 //Name Validation
 
@@ -19,7 +17,10 @@ function validateForm(event) {
     if (name == null || name == " ") {
         console.log('name validation failed');
         alert("The Name value needs to be filled");
+
         return false;
+
+        //return false;
     }
     //Email Validation
 
@@ -27,24 +28,28 @@ function validateForm(event) {
     if (email == null || email == " ") {
         console.log('email validation failed');
         alert("The Email value needs to be filled");
-        return false
+        //return false
     } else if (email.indexOf('@') === -1) //This checks to see if the email has an @ symbol. "-1" is an error code
     {
         console.log('email validation failed');
         alert("Email needs to contain an '@' symbol.");
-        return false;
-    }
 
+        return false;
+        //return false;
+
+    }
 
     //Radio or Delivery Type Validation
 
     for (var i=0; i < document.theForm.deliveryPreference.length; i++) {
         //Uses the DOM and name attributes to make radio button array.length
 
+
         if (document.theForm.deliveryPreference[i].checked != true){
             console.log('delivery option validation failed');
             alert("Please select your preferred delivery option!");
             return false;
+
         }
     }
 
@@ -52,9 +57,11 @@ function validateForm(event) {
 
     var address = document.forms["theForm"]["address"].value;
     if (address == null || address == " ") {
+
         console.log('address validation failed');
         alert("The Address needs to be filled");
         return false;
+
     }
 
     return true;
