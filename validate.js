@@ -13,31 +13,26 @@ function validateForm(event) {
 
     event.preventDefault();
 
-    var valid = 0;
-
 //Name Validation
 
-    var name = document.forms["theForm"]["CustomerName"].value
+    var name = document.forms["theForm"]["CustomerName"].value;
     if (name == null || name == " ") {
-
+        console.log('name validation failed');
         alert("The Name value needs to be filled");
         return false;
-    } else {
-        valid++;
     }
     //Email Validation
 
-    var email = document.forms["theForm"]["CustomerEmail"].value
+    var email = document.forms["theForm"]["CustomerEmail"].value;
     if (email == null || email == " ") {
-
+        console.log('email validation failed');
         alert("The Email value needs to be filled");
         return false
     } else if (email.indexOf('@') === -1) //This checks to see if the email has an @ symbol. "-1" is an error code
     {
+        console.log('email validation failed');
         alert("Email needs to contain an '@' symbol.");
         return false;
-    } else {
-        valid++;
     }
 
 
@@ -46,25 +41,22 @@ function validateForm(event) {
     for (var i=0; i < document.theForm.deliveryPreference.length; i++) {
         //Uses the DOM and name attributes to make radio button array.length
 
-        if (document.theForm.deliveryPreference[i].checked == true){
-            valid++
-            return true;
-        } else {
-
-            alert("Please select your preferred delivery option!")
+        if (document.theForm.deliveryPreference[i].checked != true){
+            console.log('delivery option validation failed');
+            alert("Please select your preferred delivery option!");
             return false;
         }
     }
 
         //Address Validation
 
-    var address = document.forms["theForm"]["address"].value
+    var address = document.forms["theForm"]["address"].value;
     if (address == null || address == " ") {
-
-        alert("The Address needs to be filled")
+        console.log('address validation failed');
+        alert("The Address needs to be filled");
         return false;
-    } else {
-        valid++;
     }
+
+    return true;
 
 }
