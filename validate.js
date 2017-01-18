@@ -34,8 +34,6 @@ function validateForm() {
         alert("Email needs to contain an '@' symbol.");
 
         return false;
-        
-
     }
 
     //Radio or Delivery Type Validation
@@ -64,5 +62,7 @@ function validateForm() {
     }
 
     return true;
+
+
 
 }
