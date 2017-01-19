@@ -51,7 +51,7 @@
         <p>
 
         <h3>How do you want to get your pizza!</h3>
-        Delivery <input type="radio" name="deliveryPreference"/>
+        Delivery <input id="delivery" type="radio" name="deliveryPreference"/>
         Pickup <input type="radio" name="deliveryPreference"/>
 
 
@@ -73,12 +73,12 @@
         <br>
         <input id="submitButton" type="submit" value="Submit" class="help-text-field"/>
         <button type="button" id="resetButton" class="help-text-field" onclick="reset();"> Reset</button>
-        <button type="button"> Show Summary</button>
+        <button id="showSummary" type="button"> Show Summary</button>
 
         <br>
 
         <!-- Insert Pizza Order Summary Table here -->
-        <div class="pizzaTable" id="pizzaTable">
+        <div id="pizzaTable">
             <h2>Pizza Order Summary</h2>
             <table id="pizzaOrderSummary">
                 <tr>

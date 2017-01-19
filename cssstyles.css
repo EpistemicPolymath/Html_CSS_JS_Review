@@ -23,11 +23,19 @@ body {
     right: 0;
 }
 
+/* Show Summary Button */
+
+#showSummary {
+
+    display: none;
+
+}
+
 /*styling for the overall table*/
+/* the class for the Div the Table is held inside */
+#pizzaTable {
 
-.pizzaTable {
-
-    visibility: hidden;
+  /*  display: none; */
 
 }
 
