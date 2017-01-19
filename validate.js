@@ -77,6 +77,7 @@ function validateForm() {
     // Tried to build Dynamic table here...never did it before so I could not finish.
     $(document).ready(function () {
 
+
         $('#showSummary').show();
 
         $("#showSummary").click(function () {
@@ -104,13 +105,14 @@ function validateForm() {
 
             $("#pizzaTable").show();
 
+
         });
 
 
     });
 
 
-    return true;
+    return false;
 
 
 }
