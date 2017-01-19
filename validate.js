@@ -74,12 +74,10 @@ function validateForm() {
 
 
     //  document.getElementById("showSummary").style.display = "unset";
-
     // Tried to build Dynamic table here...never did it before so I could not finish.
     $(document).ready(function () {
 
         $('#showSummary').show();
-
 
         $("#showSummary").click(function () {
 
@@ -88,7 +86,7 @@ function validateForm() {
             $("#emailData").innerHTML = document.forms["theForm"]["customerEmail"].value;
             $("#addressData").innerHTML = document.forms["theForm"]["address"].value;
 
-            //Couldn't figure out how to do toppings
+            //Couldn't figure out how to do toppings in time
 
             var delivery = " ";
             if ($('#delivery').is(':checked')) {
@@ -101,9 +99,10 @@ function validateForm() {
 
             $("#deliveryData").innerHTML = delivery;
             $("#tipData").innerHTML = $("#tip").val();
+            //Would need toppings for this
             $("#totalData").innerHTML = " ";
 
-                $("#pizzaTable").show();
+            $("#pizzaTable").show();
 
         });
 
@@ -111,7 +110,7 @@ function validateForm() {
     });
 
 
-    // return true;
+    return true;
 
 
 }

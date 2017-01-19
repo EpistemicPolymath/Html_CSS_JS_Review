@@ -35,7 +35,7 @@ body {
 /* the class for the Div the Table is held inside */
 #pizzaTable {
 
-  /*  display: none; */
+    display: none;
 
 }
 
