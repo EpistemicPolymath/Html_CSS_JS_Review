@@ -35,14 +35,14 @@ table {
     border: double;
 }
 
-.table-headers{
+.table-headers {
 
     background-color: black;
     color: white;
     width: 15%;
 }
 
-.oddrow{
+.oddrow {
     background-color: #ffffff;
     border-style: ridge;
     width: 70%;

@@ -34,6 +34,6 @@ $(document).ready(function () {
     });
 
     $("#helpText").val("This is to provide context-sensitive help. " +
-    "Click on any input field or use the TAB key to get more information about the input field.");
+        "Click on any input field or use the TAB key to get more information about the input field.");
 
 });

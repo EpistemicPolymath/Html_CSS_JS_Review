@@ -22,7 +22,7 @@ function validateForm() {
     //Email Validation
 
     var email = document.forms["theForm"]["customerEmail"].value;
-    if ((email == " ") || (email == null) ||( email == "")) {
+    if ((email == " ") || (email == null) || ( email == "")) {
         console.log('email validation failed');
         alert("The Email value needs to be filled");
         return false;
@@ -34,16 +34,16 @@ function validateForm() {
     }
 
 
-   /* If I wanted to check for at least one topping CheckBoxes
+    /* If I wanted to check for at least one topping CheckBoxes
 
-    if (document.querySelector('.toppings:checked')) {
-        // somethings checked
-    }else{
+     if (document.querySelector('.toppings:checked')) {
+     // somethings checked
+     }else{
 
-        alert("Don't you want a topping?");
-        return false;
-    }
-*/
+     alert("Don't you want a topping?");
+     return false;
+     }
+     */
     //Radio or Delivery Type Validation
     var success = false;
     for (var i = 0; i < document.theForm.deliveryPreference.length; i++) {
@@ -55,7 +55,7 @@ function validateForm() {
         }
     }
 
-    if(success == false) {
+    if (success == false) {
         console.log('delivery option validation failed');
         alert("Please select your preferred delivery option!");
         return false;
@@ -70,6 +70,10 @@ function validateForm() {
         alert("The Address needs to be filled");
         return false;
     }
+
+
+
+
 
     return true;
 
