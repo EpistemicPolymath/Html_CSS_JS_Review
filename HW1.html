@@ -20,14 +20,12 @@
     <div class="help-text">
 
             <textarea id="helpText" rows="8" cols="60">
-            This TEXTAREA provides context-sensitive help.
-                Click on any input field or use the TAB key to get more information
-                about the input field.
+         <!-- interact.js -->
             </textarea>
 
     </div>
 
-    <form id="form" action="#" name="theForm">
+    <form id="form" action="#" name="theForm" >
 
 
         Name: <input type="text" class="input-fields" class="help-text-field" id="nameInput" name="customerName"/> <br/>
@@ -38,13 +36,13 @@
         <h3>Toppings:</h3>
 
         <p>
-            Extra Cheese:<input type="checkbox" name="toppings" class="toppings"/>
-            Pepperoni:<input type="checkbox" name="toppings" class="toppings"/>
-            Olives:<input type="checkbox" name="toppings" class="toppings"/>
-            Pepper:<input type="checkbox" name="toppings" class="toppings"/>
-            Bacon:<input type="checkbox" name="toppings" class="toppings">
-            Tomatoes:<input type="checkbox" name="topping" class="toppings"/>
-            Mushrooms:<input type="checkbox" name="toppings" class="toppings"/>
+            Extra Cheese:<input type="checkbox" name="toppings[extra cheese]" class="toppings"/>
+            Pepperoni:<input type="checkbox" name="toppings[pepperoni]" class="toppings"/>
+            Olives:<input type="checkbox" name="toppings[olives]" class="toppings"/>
+            Pepper:<input type="checkbox" name="toppings[pepper]" class="toppings"/>
+            Bacon:<input type="checkbox" name="toppings[Bacon]" class="toppings">
+            Tomatoes:<input type="checkbox" name="topping[tomatoes]" class="toppings"/>
+            Mushrooms:<input type="checkbox" name="toppings[mushrooms]" class="toppings"/>
 
         </p>
 

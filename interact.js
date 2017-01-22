@@ -8,9 +8,22 @@ $(document).ready(function () {
 
     });
 
+    $("#nameInput").blur(function() {
+
+     resetText();
+
+    });
+
     $("#emailInput").focus(function () {
 
         $("#helpText").val("Enter your email address in the format user@domain");
+    });
+
+
+    $("#emailInput").blur(function() {
+
+        resetText();
+
     });
 
 
@@ -20,9 +33,21 @@ $(document).ready(function () {
 
     });
 
+    $("#address").blur(function() {
+
+        resetText();
+
+    });
+
     $("#submitButton").focus(function () {
 
         $("#helpText").val("Submit Order");
+
+    });
+
+    $("submitButton").blur(function() {
+
+        resetText();
 
     });
 
@@ -33,7 +58,22 @@ $(document).ready(function () {
 
     });
 
+
+    $("#resetButton").blur(function() {
+
+        resetText();
+
+    });
+
+
+
+});
+
+
+function resetText(){
+
     $("#helpText").val("This is to provide context-sensitive help. " +
         "Click on any input field or use the TAB key to get more information about the input field.");
 
-});
+
+}
