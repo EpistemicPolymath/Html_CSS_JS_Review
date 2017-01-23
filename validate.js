@@ -96,7 +96,16 @@ function validateForm() {
             $("#addressData").text(document.forms["theForm"]["address"].value);
 
 
-            //Couldn't figure out how to do toppings in time
+            //Toppings
+
+            var toppings = []; //Create an array for the toppings
+            $('.toppings').each(function(index) { //For each topping check if it is checked if so add value to toppings array
+                // if is checked
+                toppings = $(this).val();
+            });
+
+            $("topping1Data").text(toppings[0]);
+            $("topping2Data").text(toppings[1]);
 
             var delivery = " ";
             if ($('#delivery').is(':checked')) {
