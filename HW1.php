@@ -36,13 +36,13 @@
         <h3>Toppings:</h3>
 
         <p>
-            Extra Cheese:<input type="checkbox" name="toppings[extra cheese]" class="toppings"/>
-            Pepperoni:<input type="checkbox" name="toppings[pepperoni]" class="toppings"/>
-            Olives:<input type="checkbox" name="toppings[olives]" class="toppings"/>
-            Pepper:<input type="checkbox" name="toppings[pepper]" class="toppings"/>
-            Bacon:<input type="checkbox" name="toppings[Bacon]" class="toppings">
-            Tomatoes:<input type="checkbox" name="topping[tomatoes]" class="toppings"/>
-            Mushrooms:<input type="checkbox" name="toppings[mushrooms]" class="toppings"/>
+            Extra Cheese:<input type="checkbox" name="toppings[]" value="extra cheese" class="toppings"/>
+            Pepperoni:<input type="checkbox" name="toppings[]" value="pepperoni" class="toppings"/>
+            Olives:<input type="checkbox" name="toppings[]" value="olives" class="toppings"/>
+            Pepper:<input type="checkbox" name="toppings[]" value="pepper" class="toppings"/>
+            Bacon:<input type="checkbox" name="toppings[]" value="Bacon" class="toppings">
+            Tomatoes:<input type="checkbox" name="topping[]" value="tomatoes" class="toppings"/>
+            Mushrooms:<input type="checkbox" name="toppings[]" value="mushrooms" class="toppings"/>
 
         </p>
 
