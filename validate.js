@@ -106,22 +106,29 @@ function validateForm() {
                 }
             });
 
-            $("topping1Data").text(toppings[0]);
-            $("topping2Data").text(toppings[1]);
+            $("#topping1Data").text(toppings[0]);
+            $("#topping2Data").text(toppings[1]);
 
             var delivery = " ";
+            var deliveryFee = 0;
             if ($('#delivery').is(':checked')) {
 
                 delivery = "Yes";
+                deliveryFee = 5;
             } else {
 
                 delivery = "No";
             }
 
             $("#deliveryData").text(delivery);
+
+            //Tip Calculation
             $("#tipData").text($("#tip").val());
-            //Would need toppings for this
-            $("#totalData").text("");
+            var tip = ($("#tip").val() / 100);
+
+           // Total Data Calculation
+            var totalPrice = (10 + 1.5 * toppings.length + deliveryFee) * (1.0 + tip);
+            $("#totalData").text(totalPrice);
 
             $("#pizzaTable").show();
 

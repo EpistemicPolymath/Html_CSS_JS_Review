@@ -54,11 +54,14 @@ table {
     background-color: #ffffff;
     border-style: ridge;
     width: 70%;
+    font-weight: bold;
+
 }
 
 .evenrow {
     background-color: #eeeeee;
     border-style: ridge;
     width: 70%;
+    font-weight: bold;
 }
 
