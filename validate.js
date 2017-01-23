@@ -123,12 +123,12 @@ function validateForm() {
             $("#deliveryData").text(delivery);
 
             //Tip Calculation
-            $("#tipData").text($("#tip").val());
+            $("#tipData").text($("#tip").val() + "%");
             var tip = ($("#tip").val() / 100);
 
            // Total Data Calculation
             var totalPrice = (10 + 1.5 * toppings.length + deliveryFee) * (1.0 + tip);
-            $("#totalData").text(totalPrice);
+            $("#totalData").text("$" + totalPrice);
 
             $("#pizzaTable").show();
 
