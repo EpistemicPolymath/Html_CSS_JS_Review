@@ -76,17 +76,25 @@ function validateForm() {
     //  document.getElementById("showSummary").style.display = "unset";
     // Tried to build Dynamic table here...never did it before so I could not finish.
 
+
+    $('#showSummary').show();
+
     $(document).ready(function () {
 
 
-        $('#showSummary').show();
+
 
         $("#showSummary").click(function () {
 
 
-            $("#nameData").innerHTML = document.forms["theForm"]["customerName"].value;
-            $("#emailData").innerHTML = document.forms["theForm"]["customerEmail"].value;
-            $("#addressData").innerHTML = document.forms["theForm"]["address"].value;
+          //  $("#nameData").innerHTML = document.forms["theForm"]["customerName"].value;
+          //  $("#emailData").innerHTML = document.forms["theForm"]["customerEmail"].value;
+          //  $("#addressData").innerHTML = document.forms["theForm"]["address"].value;
+
+            $("#nameData").text(document.forms["theForm"]["customerName"].value);
+            $("#emailData").text(document.forms["theForm"]["customerEmail"].value);
+            $("#addressData").text(document.forms["theForm"]["address"].value);
+
 
             //Couldn't figure out how to do toppings in time
 
@@ -99,10 +107,10 @@ function validateForm() {
                 delivery = "No";
             }
 
-            $("#deliveryData").innerHTML = delivery;
-            $("#tipData").innerHTML = $("#tip").val();
+            $("#deliveryData").text(delivery);
+            $("#tipData").text($("#tip").val());
             //Would need toppings for this
-            $("#totalData").innerHTML = " ";
+            $("#totalData").text("");
 
             $("#pizzaTable").show();
 
