@@ -98,10 +98,10 @@ function validateForm() {
 
             //Toppings
 
-            var toppings = []; //Create an array for the toppingss
+            var toppings = []; //Create an array for the toppings
             $('.toppings').each(function(index) { //For each topping check if it is checked if so add value to toppings array
                 // if is checked
-                toppings = $(this).val();
+                toppings.push($(this).val());
             });
 
             $("topping1Data").text(toppings[0]);
